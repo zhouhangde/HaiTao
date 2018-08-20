@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>HaiTao2</display-name>
+  <servlet>
+    <servlet-name>ManagerLoginServlet</servlet-name>
+    <servlet-class>com.haitao.servlet.ManagerLoginServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>CustomerLoginServlet</servlet-name>
+    <servlet-class>com.haitao.servlet.CustomerLoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ManagerLoginServlet</servlet-name>
+    <url-pattern>/ManagerLogin</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CustomerLoginServlet</servlet-name>
+    <url-pattern>/CustomerLogin</url-pattern>
+  </servlet-mapping>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+   <servlet>
+   <servlet-name>UpdateCustomerServlet</servlet-name>
+   <servlet-class>com.haitao.servlet.UpdateCustomerServlet</servlet-class>
+  </servlet> 
+  <servlet>
+    <servlet-name>zhuceServlet</servlet-name>
+    <servlet-class>com.haitao.servlet.zhuceServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>SelectCustomer</servlet-name>
+    <servlet-class>com.haitao.servlet.SelectCustomer</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>logoff</servlet-name>
+    <servlet-class>com.haitao.servlet.logoff</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>salesServlet</servlet-name>
+    <servlet-class>com.haitao.servlet.salesServlet</servlet-class>
+  </servlet>
+
+<servlet>
+    <servlet-name>ProductSearch</servlet-name>
+    <servlet-class>com.haitao.servlet.ProductSearch</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>buyServlet</servlet-name>
+    <servlet-class>com.haitao.servlet.buyServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>memberServlet</servlet-name>
+    <servlet-class>com.haitao.servlet.memberServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>addToShoppingCart</servlet-name>
+    <servlet-class>com.haitao.servlet.addToShoppingCart</servlet-class>
+  </servlet>
+  
+	<servlet>
+    <servlet-name>IdentityServlet</servlet-name>
+    <servlet-class>IdentityServlet.IdentityServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>IdentityServlet</servlet-name>
+    <url-pattern>/servlet/IdentityServlet</url-pattern>
+  </servlet-mapping>
+
+<servlet-mapping>
+    <servlet-name>ProductSearch</servlet-name>
+    <url-pattern>/search</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>zhuceServlet</servlet-name>
+    <url-pattern>/zhuce</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SelectCustomer</servlet-name>
+    <url-pattern>/SelectCustomer</url-pattern>
+  </servlet-mapping>
+
+<servlet-mapping>
+    <servlet-name>UpdateCustomerServlet</servlet-name>
+    <url-pattern>/UpdateCustomer</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>logoff</servlet-name>
+    <url-pattern>/logoff</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>salesServlet</servlet-name>
+    <url-pattern>/salesServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>buyServlet</servlet-name>
+    <url-pattern>/buyServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>memberServlet</servlet-name>
+    <url-pattern>/memberServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>addToShoppingCart</servlet-name>
+    <url-pattern>/addToShoppingCart</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>ShoppingCartServlet</servlet-name>
+    <servlet-class>com.haitao.servlet.ShoppingCartServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>DeleteShoppingCart</servlet-name>
+    <servlet-class>com.haitao.servlet.DeleteShoppingCart</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ByServlet</servlet-name>
+    <servlet-class>com.haitao.servlet.ByServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>updateShoppingCart</servlet-name>
+    <servlet-class>com.haitao.servlet.updateShoppingCart</servlet-class>
+  </servlet>
+
+
+
+<servlet-mapping>
+    <servlet-name>ShoppingCartServlet</servlet-name>
+    <url-pattern>/ShoppingCartServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DeleteShoppingCart</servlet-name>
+    <url-pattern>/DeleteShoppingCart</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ByServlet</servlet-name>
+    <url-pattern>/ByServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>updateShoppingCart</servlet-name>
+    <url-pattern>/updateShoppingCart</url-pattern>
+  </servlet-mapping>
+  
+  <filter>
+  <filter-name>myfilter</filter-name>
+  <filter-class>com.chinasoft.filter.myfilter</filter-class>
+  </filter>
+  <filter-mapping>
+  <filter-name>myfilter</filter-name>
+  <url-pattern>/member/*</url-pattern>
+  </filter-mapping>
+</web-app>
